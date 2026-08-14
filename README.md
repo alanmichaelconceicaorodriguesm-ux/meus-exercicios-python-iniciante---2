@@ -1,7 +1,7 @@
 # meus-exercicios-python-iniciante - 2
 São questões simples para minha pessoa ter uma ser noção do meu progresso. 
 
-frutas = ("Maçã", "Banana", "Uva", "Manga")
+frutas = ("Limão", "Banana", "Uva", "Manga")
 
 print("Frutas: ", frutas)
 
