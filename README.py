@@ -7,7 +7,7 @@ if nome == "Alan":
     print("Que nome bonito.")
 
 elif nome == "Alice" or nome == "Gabriel" or nome == "João":
-    print("Seu nome é bem popular no Bradil.") 
+    print("Seu nome é bem popular no Brasil.") 
     
 elif nome == "Alecsander":
     print("Até que é legal. Dá pro gasto.")
