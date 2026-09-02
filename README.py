@@ -18,4 +18,4 @@ elif nome in "Ana Jéssica Carol Juliana":
 else:
     print("Seu nome até que é normal.")
         
-print("Olá,", nome, ".")
+print(f"Olá, {nome}.")
