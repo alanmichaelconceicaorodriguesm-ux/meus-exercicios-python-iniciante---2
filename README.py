@@ -1,21 +1,14 @@
-# meus-exercicios-python-iniciante - 2
-São questões simples para minha pessoa ter uma ser noção do meu progresso. 
+senha = int(input("Digite sua senha: "))
+nome = str(input("Digite seu nome usuário: "))
 
-nome = str(input("Qual é o seu nome? "))
+senha = str(senha)
 
-if nome == "Alan":
-    print("Que nome bonito.")
-
-elif nome == "Alice" or nome == "Gabriel" or nome == "João":
-    print("Seu nome é bem popular no Brasil.") 
+if senha == "1234" and nome == "Alan":
+    print("Acesso concedido.")
+    print(f"Usuário: {nome}")
     
-elif nome == "Alecsander":
-    print("Até que é legal. Dá pro gasto.")
-    
-elif nome in "Ana Jéssica Carol Juliana":
-    print("Belo nome feminino.")
-        
 else:
-    print("Seu nome até que é normal.")
-        
-print(f"Olá, {nome}.")
+    print("Acesso negado.")
+    print("Suas ações são inválidas.")
+    
+print("Obrigado por utilizar nossos serviços")
