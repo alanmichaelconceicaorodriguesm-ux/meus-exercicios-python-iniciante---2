@@ -1,14 +1,35 @@
-senha = int(input("Digite sua senha: "))
-nome = str(input("Digite seu nome usuário: "))
+# Aqui Está e uma utilização do dicionário. 
 
-senha = str(senha)
+pessoa = {
+    "nome": "Teste.",
+    "peso": 0.0,
+    "idade": 0
+}
 
-if senha == "1234" and nome == "Alan":
-    print("Acesso concedido.")
-    print(f"Usuário: {nome}")
-    
-else:
-    print("Acesso negado.")
-    print("Suas ações são inválidas.")
-    
-print("Obrigado por utilizar nossos serviços")
+print("Dados do usuário logo abaixo:")
+print("Nome: ", pessoa["nome"])
+print(f"Peso: {pessoa["peso"]}.")
+print(pessoa["idade"]) 
+
+print()
+
+# Nestes exemplos de linhas acima coloquei 3 tipos de maneiras de fazer, claro que resultam quase no mesmo resultado.
+
+pessoa["nome"] = "Alan"
+pessoa["peso"] = 57.3
+pessoa["idade"] = 17
+
+print(f"Nome: {pessoa["nome"]}.")
+print(f"Peso: {pessoa["peso"]}.")
+print(f"Idade: {pessoa["idade"]}.")
+
+print()
+
+# Este bloco de comando está com informaçãoes inseridas. Acima
+
+pessoa["nome"] = str(input("Digite seu nome: "))
+pessoa["peso"] = float(input("Digite seu peso: "))
+pessoa["idade"] = int(input("Digite sua idade: "))
+
+print(f"Nome: {pessoa["nome"]}.\nPeso: {pessoa["peso"]}.\nIdade: {pessoa["idade"]}.") 
+# Logo acima o usuário insirar seus dados.
