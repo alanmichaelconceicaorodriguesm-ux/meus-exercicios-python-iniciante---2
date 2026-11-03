@@ -33,3 +33,13 @@ pessoa["idade"] = int(input("Digite sua idade: "))
 
 print(f"Nome: {pessoa["nome"]}.\nPeso: {pessoa["peso"]}.\nIdade: {pessoa["idade"]}.") 
 # Logo acima o usuário insirar seus dados.
+
+print("CADASTRO DE PESSOA")
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+altura = float(input("Digite sua altura: "))
+peso = float(input("Digiite seu peso: "))
+
+print()
+
+print(f"Nome: {nome}.\nIdade: {idade} anos.\nAltura: {altura:.2f} metros.\nPeso: {peso:.2f} kg.")
