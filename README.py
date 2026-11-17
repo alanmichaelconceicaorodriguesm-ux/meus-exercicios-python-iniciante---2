@@ -205,3 +205,20 @@ peso = float(input("Digiite seu peso: "))
 print()
 
 print(f"Nome: {nome}.\nIdade: {idade} anos.\nAltura: {altura:.2f} metros.\nPeso: {peso:.2f} kg.")
+
+pessoa = {}
+
+pessoa["nome"] = "Alan"
+pessoa["peso"] = 57.3
+pessoa["idade"] = 17
+
+print(f"Nome: {pessoa["nome"]}.\nPeso: {pessoa["peso"]}.\nIdade: {pessoa["idade"]}.") 
+
+pessoa["nome"] = str(input("Digite seu nome: "))
+pessoa["peso"] = float(input("Digite seu peso: "))
+pessoa["idade"] = int(input("Digite sua idade: "))
+
+for chave, vaga in pessoa.items():
+    print(chave, ":", vaga)
+    
+
