@@ -268,10 +268,55 @@ while True:
         break
     else:
         print()
+           
 
+listaproduto = []
+opc = 0
+while opc != 6:
+    print("DIGITE A OPÇÃO")
+    print("1 - Cadastrar Produto.")
+    print("2 - Alterar.")
+    print("3 - Excluir.")
+    print("4 - Listar.")
+    print("5 - Consultar.")
+    print("6 - Sair")
 
+    opc = int(input("Opção: "))
 
+    if opc  == 1:
+
+        while True:
+            id = int(input("Digite o código do produto: "))
+            nome = str(input("Nome do produto: "))
+            qualidade = str(input("Qualidade do produto: "))
+            preco = float(input("Preço do produto: "))
+            cor = str(input("Cor do produto: "))
+            peso = float(input("Peso do produto: "))
+            qtd = int(input("Quantidade do produto: "))
+            
+
+            
+            listaproduto.append({"nome": nome, "qualidade": qualidade, "preco": preco, "cor": cor, "peso": peso, "qtd": qtd})
+            
+            sn = str(input("Deseja sair (S/N)? ")).lower()
+            if sn == "s":
+                break
+            
+            print()
+            
+        print(listaproduto)
+
+    elif opc  == 2:
+        print()
+    elif opc  == 3:
+        print()
+    elif opc  == 4:
+        print()
+    elif opc  == 5:
+        print()
+    elif opc  == 6:
+        print()
+        break
+    else:
+        print()
         
-
-    
-
