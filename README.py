@@ -222,6 +222,7 @@ for chave, vaga in pessoa.items():
     print(chave, ":", vaga)
 
 
+listaproduto = []
 while True:
     print("DIGITE A OPÇÃO")
     print("1 - Cadastrar.")
@@ -234,8 +235,7 @@ while True:
     opc = int(input("Opção: "))
 
     if opc  == 1:
-        listaproduto = []
-
+        
         while True:
             id = int(input("Digite o código do produto: "))
             nome = str(input("Nome do produto: "))
@@ -268,6 +268,9 @@ while True:
         break
     else:
         print()
+
+
+
         
 
     
