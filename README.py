@@ -344,8 +344,6 @@ while opc != 6:
             peso = float(input("Peso do produto: "))
             qtd = int(input("Quantidade do produto: "))
             
-
-            
             listaproduto.append({"nome": nome, "qualidade": qualidade, "preco": preco, "cor": cor, "peso": peso, "qtd": qtd})
             
             sn = str(input("Deseja sair (S/N)? ")).lower()
@@ -369,5 +367,16 @@ while opc != 6:
         break
     else:
         print()
-        
+
+
+elif opc == "2":
+    busca = int(input("Digite o código do produto: "))
+
+    for produto in listaproduto:
+        if produto["id"] == busca:
+            print("Achou!")
+            # Faça a alteração aqui
+            break
+    else:
+        print("Não achou!")
 
