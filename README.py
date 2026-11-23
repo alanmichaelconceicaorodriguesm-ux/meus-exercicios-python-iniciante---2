@@ -70,6 +70,23 @@ print(pessoa)
 print()
 
 # Aqui está um exemplo de como utilizar o dicionário em Python. Palvras-chave são únicas e imutáveis, enquanto os valores podem ser de qualquer tipo de dado. Dicionários são úteis para armazenar informações relacionadas a um objeto ou entidade, como dados de uma pessoa, produto ou configuração de system.
+busca = str(input("Digite o código do produto: "))
+        for produto in listaproduto:
+            if produto["id"] == busca:
+                print("Achou!")
+            else:
+                print("Não achou!")
+                            
+                id = str(input("Digite o código do produto: "))
+                nome = str(input("Nome do produto: "))
+                qualidade = str(input("Qualidade do produto: "))
+                preco = float(input("Preço do produto: "))
+                cor = str(input("Cor do produto: "))
+                peso = float(input("Peso do produto: "))
+                qtd = int(input("Quantidade do produto: "))
+                
+                altera = str(input("Deseja alterar esse item (s/n)? "))
+#
 
 pessoa = {"nome": "Ali", "idade": 25, "cidade": "Rio"}
 pessoa ["profissão"] = "Engenheiro"
